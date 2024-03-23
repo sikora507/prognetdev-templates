@@ -11,6 +11,7 @@
     <copyright>Copyright 2024</copyright>
     <tags>dotnet-new template csharp console prognetdev</tags>
     <repository type="git" url="https://github.com/sikora507/prognetdev-templates" />
+    <license type="expression">MIT</license>
   </metadata>
   <files>
     <file src="Prognetdev.Templates.Console\**" target="content" exclude="**\bin\**;**\obj\**" />
