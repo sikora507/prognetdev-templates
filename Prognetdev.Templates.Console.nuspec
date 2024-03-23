@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Prognetdev.Templates.Console</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <authors>Tomasz Sikora</authors>
     <owners>Tomasz Sikora</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,8 +12,10 @@
     <tags>dotnet-new template csharp console prognetdev</tags>
     <repository type="git" url="https://github.com/sikora507/prognetdev-templates" />
     <license type="expression">MIT</license>
+    <readme>readme.md</readme>
   </metadata>
   <files>
     <file src="Prognetdev.Templates.Console\**" target="content" exclude="**\bin\**;**\obj\**" />
+    <file src="readme.md" target="" />
   </files>
 </package>
