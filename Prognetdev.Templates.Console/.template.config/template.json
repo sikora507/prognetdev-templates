@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Tomasz Sikora",
+  "classifications": [ "Console", "Custom" ],
+  "identity": "Prognetdev.Templates.Console",
+  "name": "Prognetdev Console Project Template",
+  "shortName": "pndconsole",
+  "sourceName": "Prognetdev.Templates.Console",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

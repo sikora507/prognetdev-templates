@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prognetdev.Templates.Console", "Prognetdev.Templates.Console\Prognetdev.Templates.Console\Prognetdev.Templates.Console.csproj", "{A66A16D1-FBE6-467F-BA81-6BAFF405BCA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prognetdev.Templates.Console", "Prognetdev.Templates.Console", "{D305F758-0673-4FB8-836C-D7516D0125D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A66A16D1-FBE6-467F-BA81-6BAFF405BCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66A16D1-FBE6-467F-BA81-6BAFF405BCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66A16D1-FBE6-467F-BA81-6BAFF405BCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66A16D1-FBE6-467F-BA81-6BAFF405BCA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A66A16D1-FBE6-467F-BA81-6BAFF405BCA6} = {D305F758-0673-4FB8-836C-D7516D0125D2}
+	EndGlobalSection
+EndGlobal
