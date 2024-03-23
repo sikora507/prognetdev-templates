@@ -7,27 +7,20 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 8.0.x
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 8.0.x
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}} # If needed for dotnet restore or other commands
 
-    - name: Pack
-      run: nuget pack Prognetdev.Templates.Console.nuspec -OutputDirectory out
+      - name: Pack
+        run: dotnet pack Prognetdev.Templates.Console.csproj --configuration Release --output out
 
-    - name: Setup .NET for Push
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 8.0.x
-        source-url: https://api.nuget.org/v3/index.json
-
-    - name: Push
-      env:
-        NUGET_API_KEY: ${{secrets.NUGET_API_KEY}}
-      run: dotnet nuget push ./out/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
+      - name: Push
+        run: dotnet nuget push "./out/*.nupkg" --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
