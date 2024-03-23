@@ -20,12 +20,13 @@ jobs:
     - name: Pack
       run: nuget pack Prognetdev.Templates.Console.nuspec -OutputDirectory out
 
-    - name: Push
+    - name: Setup .NET for Push
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 8
         source-url: https://api.nuget.org/v3/index.json
+
+    - name: Push
       env:
         NUGET_API_KEY: ${{secrets.NUGET_API_KEY}}
-
       run: dotnet nuget push ./out/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
